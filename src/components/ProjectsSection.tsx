@@ -63,11 +63,12 @@ const ProjectsSection = () => {
 const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <section className="relative z-50 bg-white min-h-screen px-4 py-20">
+    <section className="relative z-50 w-screen min-h-screen overflow-hidden">
       {/* White background to cover previous layers */}
       <div className="absolute inset-0 bg-white z-[-1]" />
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto pt-20 pb-15">
+
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">My Work</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
