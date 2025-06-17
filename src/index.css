@@ -71,3 +71,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* In your global CSS or tailwind config */
+@keyframes scroll-code {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%); /* or adjust based on content length */
+  }
+}
+
+.animate-scroll-code {
+  animation: scroll-code 30s linear infinite;
+}
