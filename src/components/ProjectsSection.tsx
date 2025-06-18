@@ -67,7 +67,7 @@ const [selected, setSelected] = useState<Project | null>(null);
       {/* White background to cover previous layers */}
           <div className="absolute inset-0 z-[-1] bg-white rounded-t-3xl overflow-hidden" />
 
-      <div className="max-w-8xl mx-auto pt-20 pb-15 ">
+      <div className="max-w-8xl mx-auto pt-20 pb-15 px-6">
 
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">My Work</h2>
 
