@@ -5,6 +5,11 @@ import profileImage from "../assets/mjchikoo2.png";
 import TabletAnimation from "../components/TabletAnimation";
 import ProjectsSection from "../components/ProjectsSection";
 import Navbar from "../components/Navbar";
+import AboutSection from "../components/aboutSection";
+
+
+
+
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -125,6 +130,10 @@ useEffect(() => {
   <div className="pt-[100vh]" id="projects">
     <ProjectsSection />
   </div>
+
+  <div className="pt-[12vh]" id="about">
+  <AboutSection />
+</div>
 </>
 
   );
