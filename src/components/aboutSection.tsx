@@ -4,19 +4,19 @@ import React from "react";
 const aboutInfo = [
   {
     heading: "Who I Am",
-    text: "I'm Manoj Padmanabha, a full-stack developer who blends creativity, logic, and AI-driven design to build meaningful solutions.",
+    text: "I'm Manoj Padmanabha, a full-stack developer with a strong interest in generative AI, machine learning, and deep learning—blending creativity, logic, and cutting-edge tech to build meaningful solutions.",
   },
   {
     heading: "Tech Stack",
-    text: "Proficient in React, Vue, Tailwind CSS, FastAPI, Python, MongoDB, Redis, Neo4j. Experienced with LLMs like Gemini and DeepSeek.",
+    text: "My tech toolkit includes React, Vue, Tailwind CSS, FastAPI, Python, MongoDB, Redis, and Neo4j. I've also worked with GCP for deployments and Firebase Storage for media management. Additionally, I've explored LLMs like Gemini and DeepSeek for real-world applications.",
   },
   {
     heading: "Academic Background",
-    text: "Pursuing a Master's in Applied Computer Science at SRH Hochschule Heidelberg, Germany. Former professional cricketer with a strong sense of discipline and teamwork.",
+    text: "Pursuing a Master's in Applied Computer Science at SRH Hochschule Heidelberg, Germany. I also hold an MBA in Business Analytics, a Bachelor's in Computer Applications, and a diploma in Graphic Designing and Interior-Exterior Designing with 3D Modeling. Former professional cricketer with a strong sense of discipline and teamwork.",
   },
   {
     heading: "Beyond Code",
-    text: "I explore new tools, capture cinematic drone content, and enjoy helping peers through mentorship and collaboration.",
+    text: "I explore new tools, capture cinematic drone content, and enjoy reading books and travelling. I'm also passionate about filmmaking, enthusiastic about fitness, and love playing cricket.",
   },
 ];
 
