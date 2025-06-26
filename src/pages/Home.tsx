@@ -127,13 +127,14 @@ useEffect(() => {
   </div>
 
   {/* 👇 Push content BELOW hero using padding */}
-  <div className="pt-[100vh]" id="projects">
-    <ProjectsSection />
-  </div>
+<section id="projects" className="pt-[100vh]">
+  <ProjectsSection />
+</section>
 
-  <div className="pt-[12vh]" id="about">
+<section id="about" className="pt-[12vh]">
   <AboutSection />
-</div>
+</section>
+
 </>
 
   );

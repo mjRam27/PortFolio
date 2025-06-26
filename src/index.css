@@ -86,3 +86,7 @@ button:focus-visible {
 .animate-scroll-code {
   animation: scroll-code 30s linear infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}
