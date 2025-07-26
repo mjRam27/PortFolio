@@ -6,8 +6,8 @@ import TabletAnimation from "../components/TabletAnimation";
 import ProjectsSection from "../components/ProjectsSection";
 import Navbar from "../components/Navbar";
 import AboutSection from "../components/aboutSection";
-
-
+import SkillsSection from "../components/SkillsSection";
+import ContactSection from "../components/ContactSection";
 
 
 
@@ -36,6 +36,20 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
 
+// import { useInView } from "react-intersection-observer";
+
+// // Scroll Spy Refs
+// const { ref: aboutRef, inView: aboutInView } = useInView({ threshold: 0.5 });
+// const { ref: skillsRef, inView: skillsInView } = useInView({ threshold: 0.5 });
+// const { ref: contactRef, inView: contactInView } = useInView({ threshold: 0.5 });
+
+// useEffect(() => {
+//   if (contactInView) window.history.replaceState(null, "", "/contact");
+//   else if (skillsInView) window.history.replaceState(null, "", "/skills");
+//   else if (aboutInView) window.history.replaceState(null, "", "/about");
+//   else window.history.replaceState(null, "", "/");
+// }, [aboutInView, skillsInView, contactInView]);
+
 
   return (
     <>
@@ -50,7 +64,9 @@ useEffect(() => {
       <Navbar />
     </div>
   {/* 🔳 Fixed Hero Section */}
-  <div className="fixed top-0 left-0 w-full h-screen z-10">
+ <div className="fixed top-0 left-0 w-full h-screen z-[-1]">
+
+
     <motion.div
   initial={{ opacity: 0, scale: 0.9 }}
   animate={{ opacity: 1, scale: 1 }}
@@ -133,6 +149,14 @@ useEffect(() => {
 
 <section id="about" className="pt-[12vh]">
   <AboutSection />
+</section>
+
+<section id="skills" className="pt-[12vh]">
+  <SkillsSection />
+</section>
+
+<section id="contact" className="pt-[12vh]">
+  <ContactSection />
 </section>
 
 </>
