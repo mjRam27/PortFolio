@@ -1,5 +1,5 @@
 // components/AboutSection.tsx
-import React from "react";
+
 
 const aboutInfo = [
   {
