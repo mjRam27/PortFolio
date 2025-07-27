@@ -1,57 +1,101 @@
-// src/components/ContactSection.tsx
+import { Mail, Github, Linkedin, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
+
+const leftVariant = {
+  hidden: { opacity: 0, x: 60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6 },
+  },
+};
+
+const rightVariant = {
+  hidden: { opacity: 0, x: 60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6 },
+  },
+};
 
 export default function ContactSection() {
   return (
-    <div className="min-h-screen bg-black text-white px-6 py-20 text-center">
+    <section className="bg-black text-white py-20 px-6">
       <motion.h2
-        className="text-4xl font-bold mb-6"
-        initial={{ opacity: 0, y: 60 }}
+        className="text-4xl md:text-5xl font-extrabold text-center mb-16 -mt-16"
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Contact Me
+        Contact
       </motion.h2>
 
-      <motion.p
-        className="text-gray-400 mb-8"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
-        I'd love to connect with you! Reach out via the form or social links below.
-      </motion.p>
-
-      <form className="max-w-xl mx-auto space-y-4">
-        <input
-          type="text"
-          placeholder="Name"
-          className="w-full px-4 py-2 bg-gray-800 rounded text-white outline-none"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full px-4 py-2 bg-gray-800 rounded text-white outline-none"
-        />
-        <textarea
-          rows={5}
-          placeholder="Your Message"
-          className="w-full px-4 py-2 bg-gray-800 rounded text-white outline-none"
-        ></textarea>
-        <button
-          type="submit"
-          className="bg-white text-black px-6 py-2 rounded hover:bg-gray-200 transition"
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
+        {/* Left: Message */}
+        <motion.div
+          className="flex-1"
+          variants={leftVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
-          Send Message
-        </button>
-      </form>
+          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+            Got questions or a project idea? With a fullstack and AI engineer at
+            your fingertips, I’m here to assist. Let's connect and explore
+            possibilities.
+          </p>
+        </motion.div>
 
-      <div className="mt-10 flex justify-center gap-6 text-white text-xl">
-        <a href="mailto:you@example.com">📧</a>
-        <a href="https://github.com/your-profile" target="_blank">🐙</a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank">💼</a>
+        {/* Right: Social icons */}
+        <motion.div
+          className="flex-1 flex flex-col items-center gap-6"
+          variants={rightVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <div className="flex gap-8">
+            {[
+              {
+                icon: Github,
+                href: "https://github.com/mjRam27",
+                label: "GitHub",
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/manoj-padmanabha-4280411b7",
+                label: "LinkedIn",
+              },
+              {
+                icon: Mail,
+                href: "mailto:mjgowda27g@gmail.com",
+                label: "Email",
+              },
+              {
+                icon: Instagram,
+                href: "https://www.instagram.com/aaryo__027",
+                label: "Instagram",
+              },
+            ].map(({ icon: Icon, href, label }) => (
+              <motion.a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+                whileHover={{ scale: 1.15 }}
+              >
+                <div className="border-t-2 border-b-2 border-blue-300 py-2 px-3 rounded transition-transform duration-300 group-hover:scale-110">
+                  <Icon className="w-8 h-8 text-white" />
+                </div>
+              </motion.a>
+            ))}
+          </div>
+          <p className="text-xl font-medium mt-2">Let's Get Social</p>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
