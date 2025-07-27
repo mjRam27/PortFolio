@@ -7,8 +7,8 @@ const aboutInfo = [
     text: "I'm Manoj Padmanabha, a full-stack developer with a strong interest in generative AI, machine learning, and deep learning—blending creativity, logic, and cutting-edge tech to build meaningful solutions.",
   },
   {
-    heading: "Tech Stack",
-    text: "My tech toolkit includes React, Vue, Tailwind CSS, FastAPI, Python, MongoDB, Redis, and Neo4j. I've also worked with GCP for deployments and Firebase Storage for media management. Additionally, I've explored LLMs like Gemini and DeepSeek for real-world applications.",
+    heading: "Experience",
+    text: "I'm currently working as a Fullstack AI Engineer Intern at DeepInsightsX since June 2025. My role involves developing AI features for web applications using Python (FastAPI) and React, deploying them on Google Cloud Platform (GCP), and managing Firebase integrations. I'm contributing to both backend architecture and frontend interfaces.",
   },
   {
     heading: "Academic Background",

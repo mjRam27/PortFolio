@@ -34,6 +34,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
     overflow-x: hidden;
+      background-color: black;
 }
 
 h1 {
